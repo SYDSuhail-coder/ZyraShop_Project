@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+
 
 const Contact = () => {
   return (
@@ -29,7 +31,7 @@ const Contact = () => {
                     Our Office
                   </p>
                   <p className="text-sm text-emerald-700">
-                   Not Menstion
+                    Not Menstion
                   </p>
                 </div>
               </div>
@@ -61,59 +63,14 @@ const Contact = () => {
               We usually reply within 24 hours (Mon-Fri).
             </p>
           </div>
-          <div className="bg-white rounded-xl shadow-lg ring-1 ring-emerald-100 p-6 sm:p-8">
-            <form action="#" method="POST" className="space-y-6">
-              <div>
-                <label
-                  htmlFor="name"
-                  className="block text-sm font-medium text-emerald-900"
-                >
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  className="mt-1 w-full px-4 py-2 border border-emerald-200 rounded-md focus:ring-2 focus:ring-emerald-500 focus:outline-none text-sm"
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium text-emerald-900"
-                >
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  className="mt-1 w-full px-4 py-2 border border-emerald-200 rounded-md focus:ring-2 focus:ring-emerald-500 focus:outline-none text-sm"
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium text-emerald-900"
-                >
-                  Message
-                </label>
-                <textarea
-                  name="message"
-                  rows="4"
-                  required
-                  className="mt-1 w-full px-4 py-2 border border-emerald-200 rounded-md focus:ring-2 focus:ring-emerald-500 focus:outline-none text-sm"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                className="w-full inline-flex items-center justify-center px-6 py-3 rounded-md bg-emerald-700 text-white text-sm font-semibold shadow hover:bg-emerald-800 focus:outline-none focus:ring-2 focus:ring-emerald-500"
-              >
-                Send Message
-              </button>
-            </form>
+          <div className="bg-white rounded-xl shadow-lg ring-1 ring-emerald-100 p-6 sm:p-8 flex items-center justify-center">
+            <Image
+              src="/product_img17.jpg"
+              alt="Contact illustration"
+              width={250}
+              height={200}
+              className="rounded-lg object-cover"
+            />
           </div>
         </div>
       </div>

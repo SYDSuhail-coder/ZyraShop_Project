@@ -15,7 +15,7 @@ const LatestProducts = () => {
         description={`Showing ${
           products.length < displayQuantity ? products.length : displayQuantity
         } of ${products.length} products`}
-        href="@/app/shop"
+        href="../shop"
       />
       <div className="mt-12 grid grid-cols-2 sm:flex flex-wrap gap-6 justify-between">
         {products
